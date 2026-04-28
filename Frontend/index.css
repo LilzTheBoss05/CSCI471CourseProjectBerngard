@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+/* global styles for the whole app */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-zinc-900 text-zinc-100 antialiased;
+}
+
+/* makes the dashed line look really close to "structured" */
+.timeline-line {
+  position: absolute;
+  left: 11px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  border-left: 2px dashed #3f3f46; /* zinc-700 color */
+}
